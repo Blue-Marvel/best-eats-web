@@ -15,7 +15,7 @@ const category = () => {
             className=" bg-gray-200 m-4 flex justify-between items-center p-4 rounded-lg"
           >
             <h1 className="font-bold sm:text-xl">{item.name}</h1>
-            <img src={item.image} alt={item.name} className=" w-20" />
+            <img src={item.image} alt={item.name} className=" w-10" />
           </div>
         ))}
       </div>
