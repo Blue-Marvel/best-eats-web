@@ -2,6 +2,8 @@ import React from 'react';
 import Navbar from './components/navbar';
 import Hero from './components/hero';
 import HeadlineCard from './components/headline-card';
+import Food from './components/food';
+import Category from './components/category'
 
 const Home = () => {
   return (
@@ -9,6 +11,8 @@ const Home = () => {
       <Navbar />
       <Hero />
       <HeadlineCard/>
+      <Food/>
+      <Category/>
     </div>
   );
 }

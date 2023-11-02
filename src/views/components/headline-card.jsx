@@ -3,22 +3,25 @@ import React from "react";
 const HeadlineCard = () => {
   const cardDetailList = [
     {
+      id: 1,
       name: "Sun's Out, BOGO's Out",
       subTitle: "Through 8/26",
       imgUrl:
         "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
+      id: 2,
       name: "New Restaurants",
       subTitle: "Added Daily",
       imgUrl:
-        "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/2878742/pexels-photo-2878742.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
     {
+      id: 3,
       name: "We Deliver Desserts Too",
       subTitle: "Tasty Treats",
       imgUrl:
-        "https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&w=600",
+        "https://images.pexels.com/photos/6529940/pexels-photo-6529940.jpeg?auto=compress&cs=tinysrgb&w=600",
     },
   ];
   return (
@@ -35,7 +38,7 @@ export default HeadlineCard;
 
 function card(cardDetails) {
   return (
-    <div className=" relative rounded-xl hover:scale-105 ">
+    <div className=" relative rounded-xl hover:scale-105 " key={cardDetails.id}>
       {/* overlay */}
       <div className=" absolute w-full h-full rounded-xl bg-black/50 text-white hover:bg-black/20 duration-500">
         <p className=" font-bold text-2xl px-2 pt-4">{cardDetails.name}</p>
