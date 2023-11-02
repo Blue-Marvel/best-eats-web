@@ -35,9 +35,9 @@ export default HeadlineCard;
 
 function card(cardDetails) {
   return (
-    <div className=" relative rounded-xl">
+    <div className=" relative rounded-xl hover:scale-105 ">
       {/* overlay */}
-      <div className=" absolute w-full h-full rounded-xl bg-black/50 text-white hover:bg-transparent duration-500">
+      <div className=" absolute w-full h-full rounded-xl bg-black/50 text-white hover:bg-black/20 duration-500">
         <p className=" font-bold text-2xl px-2 pt-4">{cardDetails.name}</p>
         <p className=" px-2">{cardDetails.subTitle}</p>
         <button className=" bg-white text-black border-white mx-2 absolute bottom-4">
